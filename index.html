@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: sans-serif;
+            background-color: deeppink;
+        }
+        h2 {
+            text-align: center;
+        }
+        .container{
+            padding:0 20px;
+            margin:50px auto;
+        }
+        .faq-item{
+            margin-top:16px;
+            border: 2px solid #eee;
+            border-radius: 30px;
+            background-color: rgb(3, 21, 1);
+            box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+        }
+        .toggle{
+            display: none;
+        }
+        .faq-header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px 20px;
+            cursor:pointer;
+            font-size:15px;
+            position: relative;
+            color: white;
+        }
+        .faq-content{
+            font-size:20px ;
+            padding:12px 14px;
+            display: none;
+            color: rgb(17, 5, 253);
+
+        }.faq-header .icon::after{
+            content: "+";
+            font-size: 25px;
+            color: rgb(134, 6, 4);
+            
+        }
+       
+        .toggle:checked + .faq-header .icon::after{
+            content: "-";
+            color: rgb(135, 3, 3);
+            font-size:25px;
+
+        }
+        
+        .toggle:checked + .faq-header +.faq-content{
+            display: block;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to my 4th miniproject </h1>
+        <h2>Frequanitly Asked Questions</h2>
+        <div class="faq-item">
+            <input type="checkbox" class="toggle"  id="faq1">
+            <label for="faq1" class="faq-header"><span>How do I access my online courses?</span>
+            <span class="icon"></span></label>
+            <div class="faq-content">
+                You can access your courses by logging into your account on our website using your registered email and password.
+            </div>
+        </div>
+        <div class="faq-item">
+            <input type="checkbox" class="toggle"  id="faq2">
+            <label for="faq2" class="faq-header"><span> Are the courses self-paced or scheduled?</span>
+            <span class="icon"></span></label>
+            <div class="faq-content">
+                Most of our courses are self-paced, allowing you to learn at your convenience. Some may have scheduled live sessions.
+            </div>
+        </div>
+        <div class="faq-item">
+            <input type="checkbox" class="toggle"  id="faq3">
+            <label for="faq3" class="faq-header"><span>Do I receive a certificate after completing a course?</span>
+            <span class="icon"></span></label>
+            <div class="faq-content">
+                Yes, upon successful completion, you will receive a digital certificate that you can download or share.
+            </div>
+        </div>
+        <div class="faq-item">
+            <input type="checkbox" class="toggle"  id="faq4">
+            <label for="faq4" class="faq-header"><span> Can I access the course materials after completing the course?</span>
+            <span class="icon"></span></label>
+            <div class="faq-content">
+                Yes, you will have lifetime access to the course materials unless stated otherwise.
+            </div>
+        </div>
+        <div class="faq-item">
+            <input type="checkbox" class="toggle"  id="faq5">
+            <label for="faq5" class="faq-header"><span>Is there a mobile app available for learning on the go?</span>
+            <span class="icon"></span></label>
+            <div class="faq-content">
+                Yes, we offer a mobile app for both Android and iOS so you can access your courses anytime, anywhere.
+            </div>
+        </div>
+        <div class="faq-item">
+            <input type="checkbox" class="toggle"  id="faq6">
+            <label for="faq6" class="faq-header"><span>How can I contact support if I have technical issues?</span>
+            <span class="icon"></span></label>
+            <div class="faq-content">
+                You can contact our support team via the "Help & Support" section on the website or email us at support@example.com.
+            </div>
+        </div>
+        <div class="faq-item">
+            <input type="checkbox" class="toggle"  id="faq7">
+            <label for="faq7" class="faq-header"><span>Are there any prerequisites for joining a course?</span>
+            <span class="icon"></span></label>
+            <div class="faq-content">
+               Some advanced courses may have prerequisites listed on the course page. Basic courses usually require no prior knowledge.
+            </div>
+        </div>
+        <div class="faq-item">
+            <input type="checkbox" class="toggle"  id="faq8">
+            <label for="faq8" class="faq-header"><span>Can I get a refund if I’m not satisfied with the course?</span>
+            <span class="icon"></span></label>
+            <div class="faq-content">
+                Yes, we offer a 7-day money-back guarantee if you’re not satisfied with the course.
+            </div>
+        </div>
+        <div class="faq-item">
+            <input type="checkbox" class="toggle"  id="faq9">
+            <label for="faq9" class="faq-header"><span>Are assignments or quizzes included in the courses?</span>
+            <span class="icon"></span></label>
+            <div class="faq-content">
+                 Yes, most courses include quizzes, assignments, and projects to help you apply what you learn.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
